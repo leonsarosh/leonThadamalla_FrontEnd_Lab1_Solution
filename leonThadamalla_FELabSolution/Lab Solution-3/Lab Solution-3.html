@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            position: fixed;
+            width: auto;
+            height: auto;
+        }
+
+        h3 {
+            margin: 0%;
+            padding: 15px;
+            padding-left: 5px;
+            padding-bottom: 10px;
+            text-align: left;
+        }
+
+        .signup {
+            /* color: white; */
+            position: absolute;
+            margin-left: 40%;
+            margin-top: 15%;
+            margin-bottom: 5%;
+            width: auto;
+            height: auto;
+            padding: 20px;
+            border-style: solid;
+            border-color: whitesmoke;
+            border-radius: 5px;
+            border-width: thin;
+            padding: 10px;
+            padding-left: 15px;
+            padding-top: 0px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        input {
+            height: 20px;
+            width: 225px;
+            margin: 3px;
+            border-color: whitesmoke;
+            /* border-radius: 5px; */
+            border-width: thin;
+            padding: 5px;
+        }
+
+        input:focus {
+            background-color: steelblue;
+            opacity: 0.35;
+        }
+
+        button {
+            color: white;
+            background-color: rgb(194, 99, 231);
+            position: relative;
+            margin: 15px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            top: 0px;
+            border-radius: 5px;
+            border-width: 0px;
+            padding: 15px;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            font-size: 15px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        #background_video {
+            position: fixed;
+            width: auto;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay muted loop id="background_video">
+        <source src="Background.mp4" type="video/mp4">
+        Video format not supported
+    </video>
+
+    <div class="signup">
+        <h3>Create Gmail Account</h3>
+        <form action="Lab Solution-3.html">
+            <input type="text" name="F_name" placeholder="Full Name" required><br>
+
+            <input type="number" name="phone" placeholder="Contact Number" size="10" minlength="10" required><br>
+            <!-- alternate way of taking contact number input -->
+            <!-- <input type="tel" name="phone" placeholder="Contact Number" pattern="[0-9]" required><br> -->
+
+            <input type="password" name="password" placeholder="Enter Password" minlength="8" required><br>
+
+            <button>Reset</button>
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
