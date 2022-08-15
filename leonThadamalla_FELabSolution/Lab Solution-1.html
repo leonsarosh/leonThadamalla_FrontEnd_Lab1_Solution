@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End Lab Solution 1</title>
+    <style>
+        body {
+            background-color: white;
+            margin-top: 0%;
+        }
+
+        header {
+            color: black;
+            text-align: center;
+            font-size: xx-large;
+            font-weight: bolder;
+            background-color: rgba(255, 0, 0, 1);
+            padding: 20px;
+            padding-right: 100px;
+            margin-top: 0%;
+        }
+
+        #navigate {
+            position: sticky;
+            top: 0%;
+            z-index: 1;
+        }
+
+        .menu {
+            margin: 0%;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .menu li a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .menu li {
+            padding: 10px;
+            display: inline-block;
+        }
+
+        .menu li:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        #menu2 li,
+        #menu3 li {
+            display: block;
+        }
+
+        #menu2,
+        #menu3 {
+            position: absolute;
+            width: auto;
+            max-width: 150;
+            display: none;
+            background-color: rgba(211, 211, 211, 0.5);
+            padding: 0%;
+            top: 100%;
+        }
+
+        .menu li:nth-child(2):hover #menu2,
+        .menu li:nth-child(3):hover #menu3 {
+            display: block;
+        }
+
+        #menu2 li a,
+        #menu3 li a {
+            color: steelblue;
+            font-size: 16px;
+        }
+
+        #menu2 li:hover,
+        #menu3 li:hover {
+            background-color: gainsboro;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Demo for Dropdown
+    </header>
+
+    <section id="navigate">
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a>
+                    <ul id="menu2">
+                        <li><a href="#">DD_link_2_1</a></li>
+                        <li><a href="#">DD_link_2_2</a></li>
+                        <li><a href="#">DD_link_2_3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Link 3</a>
+                    <ul id="menu3">
+                        <li><a href="#">DD_link_3_1</a></li>
+                        <li><a href="#">DD_link_3_2</a></li>
+                        <li><a href="#">DD_link_3_3</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+
+</body>
+
+</html>
